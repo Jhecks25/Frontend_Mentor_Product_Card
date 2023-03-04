@@ -1,0 +1,148 @@
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+body{
+  background-color: hsl(30, 38%, 92%);
+}
+
+/**
+ * Adding internal font
+
+
+  @font-face{
+  src: url(https://fonts.google.com/specimen/Montserrat);
+  font-family: Montserrat;
+}
+
+@font-face{
+  src: url(https://fonts.google.com/specimen/Fraunces);
+  font-family: Fraunces;
+}
+*/
+
+main{
+  width: 90vw;
+  margin: 2em auto;
+}
+
+.flex-container{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-page{
+  background-image: url("images/image-product-mobile.jpg");
+  background-repeat: no-repeat;
+  width: 90vw;
+  height: 40vh;
+  background-size: cover;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.text-container{
+  width: 100vw;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.text{
+  width: 85vw;
+  font-size: 1em;
+  line-height: 2em;
+}
+
+.text > h3{
+ text-transform: uppercase;
+ letter-spacing: 0.2rem;
+}
+
+.text > span.first_amount{
+  color: hsl(158, 36%, 37%);
+  font-size: 30px;
+  margin-left: 20px;  
+}
+
+.text h1, h3, span{
+   font-family: 'Fraunces', serif;
+}
+
+.text h1, h3, p, button{
+   margin: 20px; 
+}
+
+.text h3, p, .second_amount{
+   color: hsl(228, 12%, 48%);
+}
+
+.text span.second_amount{
+  text-decoration: line-through;
+  font-size: 15px;
+  margin-left: 10px; 
+}
+
+.text button{
+  background-color: hsl(158, 36%, 37%);
+  width: 80vw;
+  height: 8vh;
+  color: hsl(0, 0%, 100%);
+  font-size: 1rem;
+  font-family: 'Montserrat', serif;
+   border-style: none;
+  border-radius: 0.5rem;  
+}
+
+.text button > svg{
+ margin: 0 0.5em;  
+}
+
+footer{
+  margin: 0.5rem;
+}
+
+.attribution { font-size: 0.8rem; text-align: center;}
+.attribution a { color: hsl(228, 45%, 44%);}
+
+
+@media screen and (min-width: 768px) {
+
+main{
+  width: 60vw;
+  margin: 5em auto;
+}
+
+.flex-container{
+  flex-flow: nowrap;
+}
+
+.image-page{
+  background-image: url("images/image-product-desktop.jpg");
+  background-repeat: no-repeat;
+  width: 21vw;
+  height: 65vh;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.text-container{
+  width: 21vw;
+  height: 65vh;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 0px 10px 10px 0px;
+}
+
+.text{
+  width: 20vw;
+  margin: 20px auto;
+  padding: 0.3em;
+  font-family: 'Montserrat', sans-serif; 
+}
+
+.text h1{
+  width: 15vw;
+}
+
+.text button{
+  width: 15vw;
+  height: 6vh;
+}
